@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #545149;
-
+  align-items: stretch;
   font-family: 'Source Sans Pro', sans-serif;;
   font-size: 24px;
 }

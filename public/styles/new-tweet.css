@@ -9,6 +9,12 @@ button {
   border-radius: 5px;
 }
 
+h4 {
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+
 /* IDs */
 
 #tweet-text{
@@ -54,4 +60,77 @@ padding-bottom: 20px;
 
 .phrase {
   padding-bottom: 5px;
+}
+
+.redCounter {
+  color: #c06014;
+}
+
+.tweetContainer {
+  display: flex;
+  width: 100%;
+  background-color: #ebebe9;
+  border: 3px solid #536162;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 20px;
+}
+
+.tweetTop {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #536162;
+
+}
+
+.tweetBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.littleImg{
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.nameAndHandler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nameAndFace {
+  display: flex;
+  flex-direction: row;
+}
+
+.individualTweet {
+display: flex;
+justify-content: flex-start;
+padding-left: 30px;
+font-weight: 600;
+font-size: 22px;
+}
+
+.datePosted{
+font-size: 16px;
+font-weight: 600;
+}
+
+.littleLogo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  color: #c06014;
+  width: 10%;
 }
