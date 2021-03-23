@@ -1,0 +1,57 @@
+/* Tags */
+
+button {
+  background-color: #c06014;
+  font-family:'Bungee', sans-serif;;
+  color: #f3f4ed;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* IDs */
+
+#tweet-text{
+  background: transparent;
+  border: none;
+  outline-color: #c06014;
+}
+
+/* Classes  */
+
+.new-tweet {
+display: flex;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+background-color: #ebebe9;
+margin-top: 20px;
+margin-bottom: 20px;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.topDiv{
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+padding-top: 60px;
+border-bottom: 4px solid #536162;
+font-weight: 600;
+padding-bottom: 10px;
+}
+
+.bottomDiv{
+display: flex;
+justify-content: space-between;
+padding-top: 15px;
+padding-bottom: 20px;
+}
+
+.counter{
+  font-family:'Bungee', sans-serif;;
+}
+
+.phrase {
+  padding-bottom: 5px;
+}

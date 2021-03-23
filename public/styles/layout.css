@@ -15,11 +15,24 @@ html {
  */
 
 body {
+  background-color: #ebebe9;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
+  display: flex;
+  flex-direction: column;
   color: #545149;
-  background-color: #f4f1ec;
+
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 24px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

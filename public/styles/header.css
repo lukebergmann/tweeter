@@ -1,0 +1,27 @@
+header {
+  background-color: #536162;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #f3f4ed;
+}
+
+.profileImg {
+display: flex;
+justify-content: center;
+padding-top: 10px;
+margin-bottom: -40px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+
+.boldName {
+  font-weight: 700;
+}
