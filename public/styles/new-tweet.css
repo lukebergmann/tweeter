@@ -31,13 +31,13 @@ h4 {
   display: none;
 }
 
-#tweetContainer:hover #username{
+.tweet:hover #username{
   color: #be5a09c7;
   font-weight: 600;
   display: flex;
 }
 
-#tweetContainer:hover {
+.tweet:hover {
   box-shadow: 8px 8px #c06114c7;
 }
 
@@ -86,12 +86,13 @@ padding-bottom: 20px;
   color: #c06014;
 }
 
-#tweetContainer {
+.tweet {
   display: flex;
   width: 100%;
   background-color: #ebebe9;
   border: 3px solid #536162;
   flex-direction: column;
+  align-items: stretch;
   padding-left: 2%;
   padding-right: 2%;
   margin-top: 25px;
