@@ -54,7 +54,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <form action="/tweets" method="POST">
+      <form id="newTweetForm" action="/tweets" method="POST">
         <div class="topDiv">
           <label class="phrase" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
@@ -66,27 +66,6 @@
       </form>
     </section>
     <section id="tweetContainer">
-      <article class="tweet">
-        <div class="tweetTop">
-          <div class="nameAndHandler">
-            <div class="nameAndFace">
-              <div class="profileImg"><img class="littleImg" src="/images/newton.png"></div>
-              <h4>Rumi</h4>
-            </div>
-            <h4 id="username">@rumiboi</h4>
-          </div>
-          <p class="individualTweet">You have to keep breaking your heart until it opens</p>
-        </div>
-        <br>
-        <div class="tweetBottom">
-          <p class="datePosted">3 days ago</p>
-          <div class="littleLogo">
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="far fa-heart"></i>
-          </div>
-        </div>
-      </article>
     </section>
   </main>
 </body>
