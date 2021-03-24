@@ -8,11 +8,15 @@ button {
   border: none;
   border-radius: 5px;
 }
+button:hover {
+  box-shadow: -2px 2px 2px #9b9b9b; 
+}
 
 h4 {
   font-weight: 300;
   margin-left: 10px;
 }
+
 
 
 /* IDs */
@@ -22,6 +26,21 @@ h4 {
   border: none;
   outline-color: #c06014;
 }
+
+#username {
+  display: none;
+}
+
+#tweetContainer:hover #username{
+  color: #be5a09c7;
+  font-weight: 600;
+  display: flex;
+}
+
+#tweetContainer:hover {
+  box-shadow: 8px 8px #c06114c7;
+}
+
 
 /* Classes  */
 
@@ -36,6 +55,7 @@ margin-bottom: 20px;
 padding-left: 5%;
 padding-right: 5%;
 }
+
 
 .topDiv{
 display: flex;
@@ -66,7 +86,7 @@ padding-bottom: 20px;
   color: #c06014;
 }
 
-.tweetContainer {
+#tweetContainer {
   display: flex;
   width: 100%;
   background-color: #ebebe9;
@@ -74,8 +94,11 @@ padding-bottom: 20px;
   flex-direction: column;
   padding-left: 2%;
   padding-right: 2%;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
+
 
 .tweetTop {
   display: flex;
@@ -119,6 +142,7 @@ justify-content: flex-start;
 padding-left: 30px;
 font-weight: 600;
 font-size: 22px;
+opacity: 0.9;
 }
 
 .datePosted{
@@ -129,8 +153,11 @@ font-weight: 600;
 .littleLogo {
   display: flex;
   align-items: center;
-  align-content: center;
   justify-content: space-between;
   color: #c06014;
   width: 10%;
+  margin-right: 10px;
+  opacity: 0.9;
+  font-size: 16px;
 }
+

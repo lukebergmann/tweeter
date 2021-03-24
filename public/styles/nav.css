@@ -6,6 +6,10 @@ nav {
   padding: 1.5em;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
 }
 
 .tweeterLogo {
