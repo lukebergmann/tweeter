@@ -53,9 +53,9 @@ const onSubmit = function (event) {
   event.preventDefault();
   const input = $("#tweet-text").val();
   if (input.length <= 0) {
-    return $("#noText").slideDown(300).delay(10000).slideUp(600);
+    return $("#noText").slideDown(300).delay(2000).slideUp(600);
   } else if (input.length > 140) {
-    return $("#overText").slideDown(300).delay(10000).slideUp(600);
+    return $("#overText").slideDown(300).delay(2000).slideUp(600);
   } else {
 
     $.ajax({ url: '/tweets', method: 'POST', data: $(this).serialize() })
