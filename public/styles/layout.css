@@ -26,6 +26,7 @@ body {
   margin-top: 100px;
 }
 
+/* Class Tags */
 .container {
   display: flex;
   justify-content: center;
@@ -34,6 +35,17 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+/* Responsive Elements */
+@media only screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  .container {
+   width: 50%;
+   margin-top: -20px;
+  }
+}

@@ -1,7 +1,9 @@
+/* Element Tags */
 nav {
   display: flex;
   height: 120px;
-  background-color: #c06014;
+  background-color: #536162;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
   color: #f3f4ed;
   padding: 1.5em;
   align-items: center;
@@ -12,9 +14,10 @@ nav {
   overflow: hidden;
 }
 
+/* Class Tags */
 .tweeterLogo {
-font-family: 'Bungee', sans-serif;
-font-size: 40px;
+  font-family: 'Bungee', sans-serif;
+  font-size: 40px;
 }
 
 .tweeterNew {
@@ -28,4 +31,12 @@ font-size: 40px;
 
 .boldNav {
   font-weight: 700;
+}
+
+/* Responsive Elements */
+@media only screen and (min-width: 900px) {
+nav {
+  background-color: #c06014;
+  background-image: none;
+}
 }

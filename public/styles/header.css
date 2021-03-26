@@ -1,3 +1,5 @@
+/* Element Tags */
+
 header {
   background-color: #536162;
   background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
@@ -10,6 +12,11 @@ header {
   color: #f3f4ed;
 }
 
+h2 {
+  font-weight: 300;
+}
+
+/* Class Tags */
 .profileImg {
 display: flex;
 justify-content: center;
@@ -17,11 +24,16 @@ padding-top: 10px;
 margin-bottom: -40px;
 }
 
-h2 {
-  font-weight: 300;
-}
-
-
 .boldName {
   font-weight: 700;
+}
+
+/* Responsive Elements */
+@media only screen and (min-width: 900px) {
+header {
+
+  height: 400px;
+  width: 30%;
+  border-radius: 3%;
+}
 }

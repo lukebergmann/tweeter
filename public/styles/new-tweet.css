@@ -43,7 +43,6 @@ h4 {
 
 
 /* Classes  */
-
 .new-tweet {
 display: flex;
 width: 100%;
@@ -83,11 +82,25 @@ padding-bottom: 20px;
 }
 
 .redCounter {
-  color: #c06014;
+  animation:blinkingText 0.8s infinite;
 }
 
+@keyframes blinkingText{
+  0%{     color: #536162;    }
+  10%{    color: #424642; }
+  20%{    color: #c06014; }
+  30%{    color: #eeb76b;  }
+  40%{   color: #f0cb98;    }
+  50%{     color: #f0cb98;    }
+  60%{    color: #eeb76b; }
+  70%{    color: #c06014; }
+  80%{    color: #424642;  }
+  100%{   color: #536162;    }
+
+}
+
+
 .tweet {
-  display: flex;
   width: 100%;
   background-color: #ebebe9;
   border: 3px solid #536162;
@@ -105,7 +118,6 @@ padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   border-bottom: 3px solid #536162;
-
 }
 
 .tweetBottom{
@@ -138,16 +150,18 @@ padding-bottom: 20px;
 }
 
 .individualTweet {
-display: flex;
+flex-direction: row;
 justify-content: flex-start;
 padding-left: 30px;
 font-weight: 600;
 font-size: 22px;
+overflow-wrap: break-word;
+display: inline-block;
 }
 
 .datePosted{
-font-size: 16px;
-font-weight: 600;
+  font-size: 16px;
+  ont-weight: 600;
 }
 
 .littleLogo {
@@ -161,3 +175,41 @@ font-weight: 600;
   font-size: 16px;
 }
 
+#noText {
+  display: none;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid #c06014;
+  font-size: 18px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: 600;
+  color: #c06014;
+}
+
+
+#overText {
+  display: none;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid #c06014;
+  font-size: 18px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: 600;
+  color: #c06014;
+}
+
+/* Responsive Elements */
+@media only screen and (min-width: 900px) {
+#overText {
+  width: 60%;
+}
+#noText {
+  width: 60%;
+}
+}
