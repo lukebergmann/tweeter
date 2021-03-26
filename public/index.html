@@ -21,6 +21,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -51,10 +54,21 @@
     </div>
   </header>
 
+
+
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <div id="noText">
+      <p> <i class="fas fa-exclamation-triangle"></i> If there is no tweet, there is no song! <i
+          class="fas fa-exclamation-triangle"></i></p>
+    </div>
+    <div id="overText">
+      <p><i class="fas fa-exclamation-triangle"></i> Looks like you're writing a novel. 140 characters max! <i
+          class="fas fa-exclamation-triangle"></i></p>
+    </div>
     <section class="new-tweet">
       <form id="newTweetForm" action="/tweets" method="POST">
+
         <div class="topDiv">
           <label class="phrase" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
